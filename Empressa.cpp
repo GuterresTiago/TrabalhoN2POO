@@ -33,7 +33,7 @@ void Empressa::Info()
 		cout << "6- Atualizar cadastro: " << endl;
 		cout << "7- Adicionar pessoa: " << endl;
 		cout << "0- Sair: \n" << endl;
-		p = 1;
+		p = 10;
 		o = 1;
 		cin >> a;
 
@@ -238,9 +238,9 @@ void Empressa::Info()
 
 					break;
 				case 4:
-					for (int i = 0; i < adm.size(); i++)
+					for (int i = 0; i < operarios.size(); i++)
 					{
-						cout << "Operario nome: " << adm[i].Getnome() << endl;
+						cout << "Operario nome: " << operarios[i].Getnome() << endl;
 					}
 					cout << "Digite o nome do operario: " << endl;
 					cin >> no;
@@ -289,70 +289,71 @@ void Empressa::Info()
 			}
 			break;
 			case 7:
-				while(p!=0)
-				cout << "1- Adicionar vendedores: " << endl;
-				cout << "2- Adicionar fornecedores: " << endl;
-				cout << "3- Adicionar admistradores: " << endl;
-				cout << "4- Adicionar operarios: " << endl;
-				cout << "0- sair: " << endl;
-				cin >> p;
-				if (p == 1)
-				{
-					cout << "Digite o nome: " << endl;
-					cin >> nomee;
-					cout << "Digite endereco: " << endl;
-					cin >> ende;
-					cout << "Digite telefone " << endl;
-					cin >> tel;
-					cout << "Digite Salario: " << endl;
-					cin >> sala;
-					cout << "Digite Valor de vendas: " << endl;
-					cin >> var;
-					addvende(nomee, ende, tel, sala, var);
+				while (p != 0) {
+					cout << "1- Adicionar vendedores: " << endl;
+					cout << "2- Adicionar fornecedores: " << endl;
+					cout << "3- Adicionar admistradores: " << endl;
+					cout << "4- Adicionar operarios: " << endl;
+					cout << "0- sair: " << endl;
+
+					cin >> p;
+					if (p == 1)
+					{
+						cout << "Digite o nome: " << endl;
+						cin >> nomee;
+						cout << "Digite endereco: " << endl;
+						cin >> ende;
+						cout << "Digite telefone " << endl;
+						cin >> tel;
+						cout << "Digite Salario: " << endl;
+						cin >> sala;
+						cout << "Digite Valor de vendas: " << endl;
+						cin >> var;
+						addvende(nomee, ende, tel, sala, var);
+					}
+					if (p == 2)
+					{
+						cout << "Digite o nome: " << endl;
+						cin >> nomee;
+						cout << "Digite endereco: " << endl;
+						cin >> ende;
+						cout << "Digite telefone " << endl;
+						cin >> tel;
+						cout << "Digite Credito: " << endl;
+						cin >> sala;
+						cout << "Digite Valor de divida: " << endl;
+						cin >> var;
+						addvende(nomee, ende, tel, sala, var);
+					}
+					if (p == 3)
+					{
+						cout << "Digite o nome: " << endl;
+						cin >> nomee;
+						cout << "Digite endereco: " << endl;
+						cin >> ende;
+						cout << "Digite telefone " << endl;
+						cin >> tel;
+						cout << "Digite Salario: " << endl;
+						cin >> sala;
+						cout << "Digite Valor de ajuda de custo: " << endl;
+						cin >> var;
+						addvende(nomee, ende, tel, sala, var);
+					}
+					if (p == 4)
+					{
+						cout << "Digite o nome: " << endl;
+						cin >> nomee;
+						cout << "Digite endereco: " << endl;
+						cin >> ende;
+						cout << "Digite telefone " << endl;
+						cin >> tel;
+						cout << "Digite Salario: " << endl;
+						cin >> sala;
+						cout << "Digite Valor de producao: " << endl;
+						cin >> var;
+						addvende(nomee, ende, tel, sala, var);
+					}
 				}
-				if (p == 2)
-				{
-					cout << "Digite o nome: " << endl;
-					cin >> nomee;
-					cout << "Digite endereco: " << endl;
-					cin >> ende;
-					cout << "Digite telefone " << endl;
-					cin >> tel;
-					cout << "Digite Credito: " << endl;
-					cin >> sala;
-					cout << "Digite Valor de divida: " << endl;
-					cin >> var;
-					addvende(nomee, ende, tel, sala, var);
-				}
-				if (p == 3)
-				{
-					cout << "Digite o nome: " << endl;
-					cin >> nomee;
-					cout << "Digite endereco: " << endl;
-					cin >> ende;
-					cout << "Digite telefone " << endl;
-					cin >> tel;
-					cout << "Digite Salario: " << endl;
-					cin >> sala;
-					cout << "Digite Valor de ajuda de custo: " << endl;
-					cin >> var;
-					addvende(nomee, ende, tel, sala, var);
-				}
-				if (p == 4)
-				{
-					cout << "Digite o nome: " << endl;
-					cin >> nomee;
-					cout << "Digite endereco: " << endl;
-					cin >> ende;
-					cout << "Digite telefone " << endl;
-					cin >> tel;
-					cout << "Digite Salario: " << endl;
-					cin >> sala;
-					cout << "Digite Valor de producao: " << endl;
-					cin >> var;
-					addvende(nomee, ende, tel, sala, var);
-				}
-				
 				break;
 
 		default:
