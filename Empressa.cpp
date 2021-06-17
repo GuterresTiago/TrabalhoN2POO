@@ -105,7 +105,7 @@ void Empressa::Info()
 					}
 					cout << "Digite o nome do vendedor: " << endl;
 					cin >> no;
-					for (int i = 0; vendedores.size(); i++)
+					for (int i = 0; i < vendedores.size(); i++)
 					{
 						if (no == vendedores[i].Getnome()) 
 						{
@@ -140,7 +140,7 @@ void Empressa::Info()
 								}
 							}
 						}
-						else cout << "nome nao encontrado" << endl;
+						
 					}
 											
 					break;
@@ -151,7 +151,7 @@ void Empressa::Info()
 					}
 					cout << "Digite o nome do Fornecedor: " << endl;
 					cin >> no;
-					for (int i = 0; fornecedores.size(); i++)
+					for (int i = 0; i < fornecedores.size(); i++)
 					{
 						if (no == fornecedores[i].Getnome()) {
 
@@ -185,7 +185,7 @@ void Empressa::Info()
 								}
 							}
 						}
-						else cout << "nome nao encontrado" << endl;
+						
 					}
 					
 
@@ -197,7 +197,7 @@ void Empressa::Info()
 					}
 					cout << "Digite o nome do Administrador: " << endl;
 					cin >> no;
-					for (int i = 0; adm.size(); i++)
+					for (int i = 0; i < adm.size(); i++)
 					{
 						if (no == adm[i].Getnome())
 						{
@@ -233,7 +233,7 @@ void Empressa::Info()
 							}
 						
 						}
-						else cout << "nome nao encontrado" << endl;
+						
 					}
 
 					break;
@@ -244,7 +244,7 @@ void Empressa::Info()
 					}
 					cout << "Digite o nome do operario: " << endl;
 					cin >> no;
-					for (int i = 0; operarios.size(); i++)
+					for (int i = 0; i < operarios.size(); i++)
 					{
 						if (no == operarios[i].Getnome())
 						{
@@ -280,10 +280,10 @@ void Empressa::Info()
 							}
 
 						}
-						else cout << "nome nao encontrado" << endl;
+						
 					}
 				default:
-					cout << "Opcao invalida!!!" << endl;
+					if(o!=0) cout << "Opcao invalida!!!" << endl;
 					break;
 				}
 			}
