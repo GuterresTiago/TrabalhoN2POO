@@ -323,7 +323,7 @@ void Empressa::Info()
 						cin >> sala;
 						cout << "Digite Valor de divida: " << endl;
 						cin >> var;
-						addvende(nomee, ende, tel, sala, var);
+						addfornece(nomee, ende, tel, sala, var);
 					}
 					if (p == 3)
 					{
@@ -337,7 +337,7 @@ void Empressa::Info()
 						cin >> sala;
 						cout << "Digite Valor de ajuda de custo: " << endl;
 						cin >> var;
-						addvende(nomee, ende, tel, sala, var);
+						addadm(nomee, ende, tel, sala, var);
 					}
 					if (p == 4)
 					{
@@ -351,7 +351,7 @@ void Empressa::Info()
 						cin >> sala;
 						cout << "Digite Valor de producao: " << endl;
 						cin >> var;
-						addvende(nomee, ende, tel, sala, var);
+						addoperario(nomee, ende, tel, sala, var);
 					}
 				}
 				break;
