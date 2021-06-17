@@ -17,7 +17,9 @@ public:
 
 protected:
 	int Setcodigo();
-	int static codigo;
+	int static codigoconta;
+	int codigo;
+
 	float salariobase;
 	float imposto;
 	float salariol;

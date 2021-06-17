@@ -1,10 +1,10 @@
 #include "Empregado.h"
 
-int Empregado::codigo = 0;
+int Empregado::codigoconta = 0;
 
 Empregado::Empregado()
 {
-	Setcodigo();
+	codigo= Setcodigo();
 }
 
 float Empregado::Getsalario()
@@ -44,8 +44,8 @@ void Empregado::Calcularsalario(float s)
 }
 int Empregado::Setcodigo()
 {
-	codigo++;
-	return codigo;
+	codigoconta++;
+	return codigoconta;
 }
 void Empregado::Info()
 {
